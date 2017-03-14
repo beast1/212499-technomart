@@ -1,0 +1,210 @@
+html,
+body {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+}
+.g-wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+.g-landing-section__header {
+  width: 100%;
+  padding: 30px 25px 25px;
+  margin-bottom: 20px;
+}
+.g-landing-section__title {
+  margin: 0;
+}
+.page-header__top-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #293449;
+  outline: 1px dashed #000;
+}
+.page-header__middle-section {
+  background-color: #f1f5f7;
+}
+.page-header__bottom-section {
+  background-color: #f1f5f7;
+}
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 42px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #ee3643;
+}
+.page-header__product-block {
+  display: flex;
+  flex-grow: 2;
+  color: #fff;
+  font-size: 17px;
+  line-height: 18px;
+}
+.page-header__product-block-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+}
+.page-header__product-block-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 42px;
+  color: #fff;
+  text-decoration: none;
+}
+.page-header__product-block-item:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #212a3a;
+}
+.page-header__product-block-item:nth-of-type(3) {
+  background-color: #63a63e;
+}
+.page-header__product-block-item:nth-of-type(3):hover {
+  background-color: #5fbb2d;
+}
+.page-header__main-nav-list {
+  background-color: #32425c;
+}
+.page-header__main-nav-list-item {
+  width: 127px;
+  height: 60px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 17px;
+}
+.page-header__main-nav-list-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+.page-header__main-nav-list-item a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #1d2739;
+}
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  min-height: 410px;
+}
+.categories__slider {
+  width: 620px;
+  margin-right: 20px;
+  min-height: 265px;
+  outline: 1px dashed red;
+}
+.categories__item {
+  min-height: 125px;
+  outline: 1px dashed red;
+}
+.categories__list-top {
+  display: flex;
+}
+.categories__item {
+  width: 300px;
+}
+.categories__list-top .categories__item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.categories__list-top .categories__item:last-of-type {
+  margin-right: 0;
+}
+.categories__list-bottom .categories__item {
+  margin-bottom: 20px;
+}
+.categories__list-bottom .categories__item:last-of-type {
+  margin-bottom: 0;
+}
+.popular-products {
+  margin-bottom: 20px;
+}
+.popular-products__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #555;
+  min-height: 340px;
+}
+.popular-products__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  background-color: #333;
+  min-height: 320px;
+}
+.popular-brands {
+  margin-bottom: 85px;
+}
+.popular-brands__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.popular-brands__item {
+  width: 220px;
+  margin-right: 20px;
+}
+.popular-brands__item:nth-of-type(4n) {
+  margin-right: 0;
+}
+.about-us {
+  width: 540px;
+}
+.contacts {
+  width: 300px;
+}
+.about-us-and-contacts {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.page-footer__short-nav-list {
+  width: 550px;
+}
+.page-footer__catalog-nav-list {
+  width: 525px;
+}
+.page-footer__top-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.page-footer__middle-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+* {
+  outline: 1px dashed red;
+}
+* > * > * {
+  outline: 1px dashed green;
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
