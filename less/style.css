@@ -46,6 +46,7 @@ body {
   border-radius: 3px;
   outline: none;
   cursor: pointer;
+  transition: ease 0.2s;
   width: 250px;
   margin-left: auto;
   color: #ffffff;
@@ -246,6 +247,7 @@ body {
   font-weight: 400;
   line-height: 18px;
   background-color: #fff;
+  transition: ease 0.2s;
 }
 .page-header__user-btn:not(:last-of-type) {
   margin-right: 10px;
@@ -321,6 +323,16 @@ body {
   color: #bfbfbf;
   background-color: #232d3f;
 }
+#categories-toggle-1:checked ~ .categories__slider-pegination .categories__slider-pegination-item:nth-of-type(1),
+#categories-toggle-2:checked ~ .categories__slider-pegination .categories__slider-pegination-item:nth-of-type(2) {
+  background-color: #ee3643;
+}
+#categories-toggle-1:checked ~ .categories__slider-items .categories__slider-item {
+  transform: translateX(0);
+}
+#categories-toggle-2:checked ~ .categories__slider-items .categories__slider-item {
+  transform: translateX(-620px);
+}
 .categories {
   display: flex;
   flex-wrap: wrap;
@@ -333,16 +345,6 @@ body {
   width: 620px;
   height: 266px;
   margin-right: 20px;
-}
-.categories__slider #categories-toggle-1:checked ~ .categories-slider__pegination .categories-slider__pegination-item-1,
-.categories__slider #categories-toggle-2:checked ~ .categories-slider__pegination .categories-slider__pegination-item-2 {
-  background-color: #ee3643;
-}
-.categories__slider #categories-toggle-1:checked ~ .categories-slider__items .categories-slider__item {
-  transform: translateX(0);
-}
-.categories__slider #categories-toggle-2:checked ~ .categories-slider__items .categories-slider__item {
-  transform: translateX(-620px);
 }
 .categories__toggle {
   position: absolute;
@@ -377,13 +379,16 @@ body {
   left: 50%;
   bottom: 35px;
   z-index: 4;
+  display: flex;
+  margin-left: -17px;
 }
 .categories__slider-pegination-item {
-  width: 8px;
-  height: 8px;
-  border: 1px solid #ffffff;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #ffffff;
   background-color: #ffffff;
   border-radius: 50%;
+  transition: ease-out 0.2s;
 }
 .categories__slider-pegination-item:not(:last-of-type) {
   margin-right: 10px;
@@ -393,6 +398,7 @@ body {
   width: 100%;
   height: 100%;
   color: #ffffff;
+  text-shadow: 1px 1px 3px #000;
   overflow: hidden;
 }
 .categories__slider-item {
@@ -401,7 +407,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 25px 25px 20px;
-  transition: ease-out 0.3s;
+  transition: ease-out 0.2s;
 }
 .categories__slider-item:nth-of-type(1) {
   background-color: #453e3e;
@@ -409,7 +415,7 @@ body {
 }
 .categories__slider-item:nth-of-type(2) {
   background-color: #453e3e;
-  background-image: url("../img/slider-item-1b.jpg");
+  background-image: url("../img/slideer-item-1b.jpg");
 }
 .categories__slider-item-title {
   display: block;
@@ -441,6 +447,7 @@ body {
   border-radius: 3px;
   outline: none;
   cursor: pointer;
+  transition: ease 0.2s;
   position: absolute;
   left: 25px;
   bottom: 25px;
@@ -485,6 +492,7 @@ body {
   border-radius: 3px;
   outline: none;
   cursor: pointer;
+  transition: ease 0.2s;
   width: 135px;
   margin-top: 15px;
   color: #ffffff;
@@ -629,6 +637,7 @@ body {
   border-radius: 3px;
   outline: none;
   cursor: pointer;
+  transition: ease 0.2s;
   width: 135px;
 }
 .product-card__btn:nth-child(1) {
@@ -881,6 +890,34 @@ body {
   font-family: "PT Sans";
   font-size: 13px;
 }
+.features__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: ease 0.2s;
+  width: 195px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+.features__btn:hover {
+  background-color: #de1321;
+}
+.features__btn:active {
+  background-color: #c7111e;
+}
 .about-us-and-contacts {
   display: flex;
   padding-top: 80px;
@@ -952,6 +989,7 @@ body {
   border-radius: 3px;
   outline: none;
   cursor: pointer;
+  transition: ease 0.2s;
   width: 220px;
   color: #ffffff;
   background-color: #ee3643;
@@ -1004,6 +1042,7 @@ body {
   border-radius: 3px;
   outline: none;
   cursor: pointer;
+  transition: ease 0.2s;
   width: 300px;
   color: #ffffff;
   background-color: #ee3643;
@@ -1326,6 +1365,7 @@ body {
   border-radius: 3px;
   outline: none;
   cursor: pointer;
+  transition: ease 0.2s;
   width: 460px;
   color: #ffffff;
   background-color: #ee3643;
